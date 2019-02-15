@@ -9,22 +9,15 @@
 </template>
 <static-query>
   query HomeQuery {
-    posts: allContentfulBlogPost {
+    posts: allPost {
       edges {
         node {
           title
           description
           slug
-          publishDate(format: "MMMM Do, YYYY")
+          date(format: "MMMM Do, YYYY")
           tags
-          heroImage {
-            path
-            slug
-            file {
-              fileName
-              url
-            }
-          }
+          cover
           description
         }
       }

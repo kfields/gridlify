@@ -3,13 +3,13 @@
     <article>
       <div class="hero">
         <div class="heroImage">
-          <Fluid alt :src="$page.post.heroImage.file.url.src" :width="1920"/>
+          <g-image :alt="$page.post.title" :src="$page.post.cover"/>
         </div>
       </div>
       <div class="section">
         <div>
           <h1>{{$page.post.title}}</h1>
-          <p style="display: block">{{$page.post.publishDate}}</p>
+          <p style="display: block">{{$page.post.date}}</p>
         </div>
         <div v-html="markdown"/>
       </div>
@@ -18,19 +18,14 @@
 </template>
 
 <page-query>
-query BlogPostByPath($path: String!) {
-  post: contentfulBlogPost(path: $path ) {
-    title
-    publishDate(format: "MMMM Do, YYYY")
-    description
-    body
-    heroImage {
-      file {
-        url
-      }
+  query BlogPost ($path: String!) {
+    post (path: $path) {
+      title
+      date (format: "D MMMM, YYYY")
+      content
+      cover
     }
   }
-}
 </page-query>
 
 <script>
@@ -54,7 +49,7 @@ export default {
     console.log("BlogPost.vue");
     console.log(this);
 
-    this.markdown = marked(this.$page.post.body);
+    this.markdown = marked(this.$page.post.content);
   }
 };
 </script>

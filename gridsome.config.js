@@ -21,16 +21,11 @@ module.exports = {
   siteDescription: 'Gridsome + Contentful + Love',
   plugins: [
     {
-      use: '~/plugins/source-contentful',
+      use: '@gridsome/source-filesystem',
       options: {
-        space: process.env.CONTENTFUL_SPACE, // required
-        accessToken: process.env.CONTENTFUL_TOKEN, // required
-        host: 'cdn.contentful.com',
-        environment: 'master',
-        typeName: 'Contentful',
-        routes: {
-          "ContentfulBlogPost": '/blog/:slug'
-        }
+        path: 'blog/*.md',
+        typeName: 'Post',
+        route: '/blog/:slug'
       }
     },
     {

@@ -2,7 +2,7 @@
   <div class="preview">
     <g-link :to="`/blog/${article.slug}`" >
       <div class="previewImage">
-        <Fluid :alt="article.title" :src="article.heroImage.file.url.src"/>
+        <g-image :alt="article.title" :src="article.cover"/>
       </div>
       <div class="previewTitle">
         {{article.title}}
