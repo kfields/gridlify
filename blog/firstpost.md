@@ -4,7 +4,10 @@ date: 2018-09-15 07:42:34
 description: Do you have what it takes?
 cover: "https://i.imgur.com/S8eaSMh.jpg"
 slug: "first"
-tags: ""
+category: ""
+tags:
+  - Gridsome
+  - Netlify
 ---
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
