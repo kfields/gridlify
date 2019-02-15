@@ -4,7 +4,7 @@
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
           <img alt class="nav-logo" src="/logos/logo-circle-normal.svg">
-          <span style="font-size: 1.5em">Gridful</span>
+          <span style="font-size: 1.5em">Gridlify</span>
         </a>
         
         <a
@@ -26,12 +26,12 @@
           <g-link class="navbar-item" to="/about">About</g-link>
           <g-link class="navbar-item" to="/contact">Contact</g-link>
           <hr class="navbar-divider">
-          <a class="navbar-item" href="https://github.com/kfields/gridful/issues">Report an issue</a>
+          <a class="navbar-item" href="https://github.com/kfields/gridlify/issues">Report an issue</a>
         </div>
 
         <div class="navbar-end">
           <div class="navbar-item">
-            <a href="https://github.com/kfields/gridful">
+            <a href="https://github.com/kfields/gridlify">
               <v-icon name="brands/github" scale="2"/>
             </a>
           </div>

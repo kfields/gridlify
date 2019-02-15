@@ -1,7 +1,7 @@
 <template>
   <div class="hero-banner">
     <div class="">
-      <h1>Gridful = Gridsome + Contentful</h1>
+      <h1>Gridlify = Gridsome + Netlify</h1>
       <i>Supercharge your site</i>
     </div>
   </div>

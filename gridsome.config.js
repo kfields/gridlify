@@ -69,9 +69,9 @@ module.exports = {
       config
       .plugin('pwa-manifest')
       .use(new WebpackPwaManifest({
-        name: 'Gridful',
-        short_name: 'Gridful',
-        description: 'Gridful = Gridsome + Contentful!',
+        name: 'Gridlify',
+        short_name: 'Gridlify',
+        description: 'Gridlify = Gridsome + Netlify!',
         start_url: '.',
         background_color: '#ffffff',
         theme_color: '#18453B', //MSU Green
