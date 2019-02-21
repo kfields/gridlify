@@ -18,5 +18,6 @@ collections:
       - {label: "Cover Image", name: "cover", widget: "image"}
       - {label: "Slug", name: "slug", widget: "string"}
       - {label: "Category", name: "category", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+
