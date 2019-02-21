@@ -23,6 +23,22 @@ const worker = {
   updated (registration) {
     console.log('New content is available; please refresh.')
   },
+  activate (event) {
+    console.log('activate, clearing cache')
+    event.waitUntil(
+      caches.keys().then(function(cacheNames) {
+        return Promise.all(
+          cacheNames.filter(function(cacheName) {
+            // Return true if you want to remove this cache,
+            // but remember that caches are shared across
+            // the whole origin
+          }).map(function(cacheName) {
+            return caches.delete(cacheName);
+          })
+        );
+      })
+    );
+  },
   offline () {
     console.log('No internet connection found. App is running in offline mode.')
   },
