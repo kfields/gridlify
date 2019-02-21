@@ -12,7 +12,7 @@
       <p/>
     </g-link>
     <div class="previewDate">
-      <small class="previewDate">{{article.publishDate}}</small>
+      <small class="previewDate">{{article.date}}</small>
     </div>
   </div>
 </template>

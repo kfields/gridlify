@@ -46,9 +46,6 @@ export default {
     };
   },
   mounted: function() {
-    console.log("BlogPost.vue");
-    console.log(this);
-
     this.markdown = marked(this.$page.post.content);
   }
 };
