@@ -38,12 +38,22 @@ export default {
   margin-bottom: .5rem;
   // line-height: 1rem;
 }
+/*
 .previewImage {
   max-height: 200px;
   overflow: hidden;
   display: block;
   width: 100%;
 }
+*/
+.previewImage {
+  max-height: 200px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .previewDate {
   text-align: right;
 }

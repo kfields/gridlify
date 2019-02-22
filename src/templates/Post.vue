@@ -1,11 +1,7 @@
 <template>
   <Layout>
     <article>
-      <div class="hero">
-        <div class="heroImage">
-          <g-image :alt="$page.post.title" :src="$page.post.cover"/>
-        </div>
-      </div>
+      <g-image class="heroImage" :alt="$page.post.title" :src="$page.post.cover"/>
       <div class="section">
         <div>
           <h1>{{$page.post.title}}</h1>

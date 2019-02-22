@@ -6,13 +6,11 @@
 }
 
 .heroImage {
-  /*
-    Ensure golden ratio for the hero size while limiting it to some extend to
-    the viewport width
-  */
-  height: 32vh;
   max-height: 400px;
   overflow: hidden;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .heroDetails {
